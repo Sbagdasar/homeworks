@@ -1,7 +1,41 @@
-.someClass {
+.container {
+    display: grid;
+    max-width: 500px;
+    grid-template-areas:"h h"
+    'n c';
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
 
+.inputDecoration {
+    height: 26px;
+    margin-right: 10px;
+    border: 2px solid #0e8002;
+    border-radius: 5px;
 }
 
 .error {
-    border: 1px solid red;
+    height: 26px;
+    margin-right: 10px;
+    border: 2px solid #f00;
+    border-radius: 5px;
+}
+
+.error:focus {
+    border: 2px solid #0e8002;
+}
+
+.error:active {
+    border: 2px solid #0e8002;
+}
+
+.errorMessage {
+    height: 25px;
+    color: #f00;
+}
+
+
+.container button {
+    height: 26px;
 }
