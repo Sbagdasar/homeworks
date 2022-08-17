@@ -1,12 +1,39 @@
-.superInput {
-
-}
-
 .errorInput {
     border: 3px solid lime;
-    background: red;
 }
 
 .error {
     color: red;
+}
+
+.inputContainer {
+    width: 30%;
+    height: 50px;
+    margin: 10px auto;
+    position: relative;
+    background-color: rgba(235, 235, 235, 0.4);
+    border-radius: 8px;
+    padding: 0 15px;
+}
+
+.col3 {
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.col3 input {
+    font: 15px/24px 'Muli', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    transition: all 0.8s ease-in;
+}
+
+.col3 input:focus {
+    outline: none;
+    border-bottom: 2px solid #0e8002;
 }

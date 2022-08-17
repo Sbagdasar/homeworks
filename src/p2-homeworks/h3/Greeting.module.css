@@ -1,22 +1,20 @@
 .container {
     display: grid;
     max-width: 500px;
-    grid-template-areas:"h h"
-    'n c';
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 26px 26px;
+    grid-template-columns: 30% 10% 10%;
     grid-gap: 10px;
 }
 
 .inputDecoration {
-    height: 26px;
-    margin-right: 10px;
+    height: 20px;
     border: 2px solid #0e8002;
     border-radius: 5px;
+    width: calc(100% - 10px);
 }
 
 .error {
-    height: 26px;
+    height: 20px;
     margin-right: 10px;
     border: 2px solid #f00;
     border-radius: 5px;
@@ -24,10 +22,12 @@
 
 .error:focus {
     border: 2px solid #0e8002;
+    border-radius: 5px;
 }
 
 .error:active {
     border: 2px solid #0e8002;
+    border-radius: 5px;
 }
 
 .errorMessage {
