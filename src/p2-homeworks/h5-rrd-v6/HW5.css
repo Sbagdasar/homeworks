@@ -1,0 +1,28 @@
+.activeLink {
+    color: red;
+}
+
+.defaultLink {
+    color: black;
+}
+
+.headerContainer {
+    width: 26%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 20%;
+    transition: all 1s ease;
+}
+
+.menuStyle {
+    cursor: pointer;
+    background: #0af;
+    border: 1px solid #0af;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.headerContainer:hover {
+    right: 0;
+}
