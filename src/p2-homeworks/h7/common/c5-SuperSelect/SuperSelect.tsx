@@ -22,9 +22,9 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         onChange && onChange(e)
         onChangeOption && onChangeOption(e.currentTarget.value)
     }
-    debugger
+
     return (
-        <select onChange={onChangeCallback} {...restProps}>
+        <select onChange={onChangeCallback} {...restProps} >
             {mappedOptions}
         </select>
     )
