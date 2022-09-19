@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, {useState} from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from './Clock.module.css'
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0)
@@ -31,8 +32,9 @@ function Clock() {
     // fix with date
 
     return (
-        <div>
+        <div className={s.container}>
             <div
+                className={s.timeString}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -40,13 +42,14 @@ function Clock() {
             </div>
 
             {show && (
-                <div>
+                <div className={s.dateShow}>
                     {stringDate}
                 </div>
             )}
-
-            <SuperButton onClick={start}>start</SuperButton>
-            <SuperButton onClick={stop}>stop</SuperButton>
+            <div className={s.btnBar}>
+                <SuperButton onClick={start}>start</SuperButton>
+                <SuperButton onClick={stop}>stop</SuperButton>
+            </div>
 
         </div>
     )
