@@ -22,9 +22,10 @@ function HW11() {
             homeworks 11
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={s.superRange}>
                 <span>{value1}</span>
-                <SuperRange onChangeRange={(value) => setVal1Handler(value)} value={value1}
+                <SuperRange onChangeRange={(value) => setVal1Handler(value)}
+                            value={value1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
