@@ -1,6 +1,6 @@
 .selectMain {
-    width: 50px;
+    width: auto;
     background: bisque;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 0 5px;
 }

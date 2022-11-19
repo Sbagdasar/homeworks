@@ -4,6 +4,10 @@ import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import {Junior} from "./pages/Junior";
 import {JuniorPlus} from "./pages/JuniorPlus";
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../h10/bll/store";
+import {ThemesType} from "../h12/bll/themeReducer";
+import s from "../h12/HW12.module.css";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -12,8 +16,10 @@ export const PATH = {
 }
 
 function Pages() {
+    const theme = useSelector<AppStoreType, ThemesType>(state => state.theme.theme)
+
     return (
-        <div>
+        <div className={s[theme]}>
             <Routes>
 
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
